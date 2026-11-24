@@ -1,0 +1,47 @@
+{
+  "architecture": "convnextv2_tiny.fcmae_ft_in22k_in1k",
+  "classes": [
+    "Potato___Bacterial_soft_rot",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___Leafroll_virus",
+    "Potato___Potato_virus_X",
+    "Potato___Potato_virus_Y",
+    "Potato___healthy"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input": "PIL RGB -> float32 [0,1] -> normalize",
+    "exif_transpose": true
+  },
+  "selection": {
+    "stage": "fine_last_two",
+    "val_loss": 0.45650779950175696,
+    "domain_macro_f1": 0.7912875378027132,
+    "domain_accuracy": 0.8355236468453079,
+    "signature": "82bd617ab556f9586f6c4d81145b644e710443effe6e9334eae22315fc2dc58f",
+    "inference": "single",
+    "smoke": false
+  },
+  "timm": "1.0.22",
+  "torch": "2.7.1+cu128",
+  "checkpoint_sha256": "ad07b435eff570fa968ab00d4e4c1e542ebaa8f1b12be4c922b147ef834cbaf8",
+  "format": "PyTorch state_dict; not compatible with the TensorFlow app loader",
+  "task": "crop_condition_specialist",
+  "species": "Potato",
+  "healthy_class": "Potato___healthy",
+  "unknown_disease_detection_evaluated": false,
+  "segmentation": false,
+  "evaluation_scope": "Condition classification given correct crop; not end-to-end router accuracy."
+}

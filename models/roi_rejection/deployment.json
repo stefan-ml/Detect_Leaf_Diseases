@@ -1,0 +1,9 @@
+{
+  "activated_on": "2026-11-03",
+  "active": true,
+  "authorization": "User: Aktiviraj ga",
+  "manifest_sha256": "78e1b1beac36b92e57a0f1f960c662a7778cd925d28676e008cb5188ebe591bb",
+  "parity": "artifacts/reference_gate_parity.json",
+  "real_app_checks": "artifacts/reference_gate_web_verification.json",
+  "tests_passed": 31
+}

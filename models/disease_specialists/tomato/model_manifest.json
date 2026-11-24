@@ -1,0 +1,50 @@
+{
+  "architecture": "convnextv2_tiny.fcmae_ft_in22k_in1k",
+  "classes": [
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Spider_mites Two-spotted_spider_mite",
+    "Tomato___Target_Spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input": "PIL RGB -> float32 [0,1] -> normalize",
+    "exif_transpose": true
+  },
+  "selection": {
+    "stage": "fine_last_two",
+    "val_loss": 0.7902144806656062,
+    "domain_macro_f1": 0.7375815668263542,
+    "domain_accuracy": 0.7399862788344652,
+    "signature": "7aa06b3022a21dc4d51b3643552a9df7236069175fffb3e697989c145d20a452",
+    "inference": "single",
+    "smoke": false
+  },
+  "timm": "1.0.22",
+  "torch": "2.7.1+cu128",
+  "checkpoint_sha256": "37c7824281f41b49e5ee161a1a82dd547bb5b5e5866f0f6d6e1ec4e298efecdb",
+  "format": "PyTorch state_dict; not compatible with the TensorFlow app loader",
+  "task": "crop_condition_specialist",
+  "species": "Tomato",
+  "healthy_class": "Tomato___healthy",
+  "unknown_disease_detection_evaluated": false,
+  "segmentation": false,
+  "evaluation_scope": "Condition classification given correct crop; not end-to-end router accuracy."
+}

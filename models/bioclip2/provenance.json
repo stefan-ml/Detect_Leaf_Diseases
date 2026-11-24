@@ -1,0 +1,45 @@
+{
+  "model": "BioCLIP 2",
+  "files": [
+    {
+      "kind": "models",
+      "repo": "imageomics/bioclip-2",
+      "revision": "2957b322090f9cb17ae72c71981c7218a28d81e0",
+      "remote_name": "open_clip_config.json",
+      "local_name": "open_clip_config.json",
+      "size": 534,
+      "sha256": null
+    },
+    {
+      "kind": "models",
+      "repo": "imageomics/bioclip-2",
+      "revision": "2957b322090f9cb17ae72c71981c7218a28d81e0",
+      "remote_name": "open_clip_model.safetensors",
+      "local_name": "open_clip_model.safetensors",
+      "size": 1710517724,
+      "sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef"
+    },
+    {
+      "kind": "datasets",
+      "repo": "imageomics/TreeOfLife-200M",
+      "revision": "5f2dc493b3dc0e544438a04038ab15faa646b749",
+      "remote_name": "embeddings/txt_emb_bioclip-2.json",
+      "local_name": "taxonomy.json",
+      "size": 91586174,
+      "sha256": "4648928b006f85d83d28e5a27074ca9363465d82e778d708b369c5eaf54b8ef5"
+    },
+    {
+      "kind": "datasets",
+      "repo": "imageomics/TreeOfLife-200M",
+      "revision": "5f2dc493b3dc0e544438a04038ab15faa646b749",
+      "remote_name": "embeddings/txt_emb_bioclip-2.npy",
+      "local_name": "taxonomy_embeddings.npy",
+      "size": 2664821888,
+      "sha256": "c72442de7b0cb7fcb55ab7ca08099d0f42fbd6769efe16ca64c1daa7a8b87db2"
+    }
+  ],
+  "source": "https://huggingface.co/imageomics/bioclip-2",
+  "citation": "Gu et al. (2025), BioCLIP 2: Emergent Properties from Scaling Hierarchical Contrastive Learning, NeurIPS.",
+  "note": "Only weights and text embeddings downloaded; no TreeOfLife training images.",
+  "model_license": "MIT"
+}

@@ -1,0 +1,45 @@
+{
+  "architecture": "convnextv2_tiny.fcmae_ft_in22k_in1k",
+  "classes": [
+    "Pumpkin___Bacterial_leaf_spot",
+    "Pumpkin___Downy_mildew",
+    "Pumpkin___Mosaic_disease",
+    "Pumpkin___Powdery_mildew",
+    "Pumpkin___healthy"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input": "PIL RGB -> float32 [0,1] -> normalize",
+    "exif_transpose": true
+  },
+  "selection": {
+    "stage": "fine_last_two",
+    "val_loss": 0.4429088406603217,
+    "domain_macro_f1": 0.831223854090607,
+    "domain_accuracy": 0.8333333333333334,
+    "signature": "48a1e52c3ce5566be6fbfc615e2eb33a8701899865a69866f01a95c13b543c61",
+    "inference": "single",
+    "smoke": false
+  },
+  "timm": "1.0.22",
+  "torch": "2.7.1+cu128",
+  "checkpoint_sha256": "6ef81c645cbd2e95d56675bfb755aad2e1903810ee961212d77293d4dcb452e8",
+  "format": "PyTorch state_dict; not compatible with the TensorFlow app loader",
+  "task": "crop_condition_specialist",
+  "species": "Pumpkin",
+  "healthy_class": "Pumpkin___healthy",
+  "unknown_disease_detection_evaluated": false,
+  "segmentation": false,
+  "evaluation_scope": "Condition classification given correct crop; not end-to-end router accuracy."
+}

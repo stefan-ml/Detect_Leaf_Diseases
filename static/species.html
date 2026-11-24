@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Analiza lista</title><link rel="stylesheet" href="/static/species.css?v=9">
+</head>
+<body><main>
+  <div class="workspace" id="analysisWorkspace">
+    <section class="card image-card">
+      <div class="section-head"><h1>Fotografija lista</h1></div>
+      <div class="preview" id="dropzone">
+        <img id="preview" alt="Fotografija koja se obrađuje" hidden>
+        <video id="camera" autoplay playsinline muted hidden></video>
+        <div id="empty"><h2>Učitaj fotografiju ili uključi kameru</h2><p>Fotografiju možeš i da prevučeš ovde.</p></div>
+        <button id="fullscreen" class="fullscreen" type="button" aria-label="Prikaži fotografiju i rezultat preko celog ekrana" aria-pressed="false"><span aria-hidden="true">⛶</span><span id="fullscreenText">Ceo ekran</span></button>
+      </div>
+      <div class="actions">
+        <label class="button" for="file">Učitaj fotografiju</label><input id="file" type="file" accept="image/*" hidden>
+        <button id="startCamera" class="secondary">Uključi kameru</button>
+        <button id="stopCamera" class="secondary" hidden>Zaustavi kameru</button>
+      </div>
+      <p id="message" role="alert" class="message error" hidden></p>
+    </section>
+    <section class="card result-card" aria-live="polite">
+      <div class="section-head"><h2>Rezultat</h2><span id="activity" class="subtle">Čekam sliku</span></div>
+      <span id="decision" class="decision neutral">Bez analize</span>
+      <h2 id="species" class="species">—</h2>
+      <section id="conditionResult" class="condition-result" hidden>
+        <p class="subtle">Stanje lista</p><h3 id="condition">—</h3>
+        <p id="conditionConfidence" class="condition-confidence"></p>
+        <p class="fine">Predlog modela za podržana stanja; ocena nije potvrda dijagnoze.</p>
+      </section>
+      <details><summary>Detalji odluke</summary>
+        <dl><dt>Predlog vrste</dt><dd id="candidate">—</dd><dt>Ocena kandidata</dt><dd id="confidence">—</dd><dt>Skor / prag odbacivanja</dt><dd id="score">—</dd><dt>Provera odbacivanja</dt><dd id="rejectionMethod">—</dd><dt>Udaljenost / prag prema poznatim listovima</dt><dd id="referenceScore">—</dd></dl>
+      </details>
+    </section>
+  </div>
+  <section class="speed" aria-label="Vreme obrade">
+    <div class="metrics">
+      <div><span>Ukupna obrada</span><strong id="total">—</strong><small>dekodiranje i analiza slike</small></div>
+      <div><span>Segmentacija lista</span><strong id="segMs">—</strong><small>gotov YOLO11n model</small></div>
+      <div><span>BioCLIP 2</span><strong id="bioMs">—</strong><small>slika i poređenje sa katalogom</small></div>
+      <div><span>Model bolesti</span><strong id="diseaseMs">—</strong><small>samo za prihvaćenu biljnu vrstu</small></div>
+      <div><span>Stvarni tok obrade</span><strong id="fps">—</strong><small>obrađeni kadrovi u sekundi</small></div>
+    </div>
+  </section>
+  <footer><strong>Podržane biljke</strong><p>Jabuka · Kukuruz · Vinova loza · Paprika · Krompir · Tikva · Soja · Paradajz</p></footer>
+</main><script src="/static/timing.js?v=1"></script><script src="/static/species.js?v=10"></script></body></html>

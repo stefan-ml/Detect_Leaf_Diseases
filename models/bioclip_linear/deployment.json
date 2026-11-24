@@ -1,0 +1,8 @@
+{
+  "source_run": "training/outputs/bioclip2_linear_species_v1",
+  "signature": "04282eff423721741d00e3486b36863e13586743f260a6c183c8f208e63099fb",
+  "head_sha256": "d6ee867b8d4bcf4baee3909ba166c0695b13aafa90367f24b6992be2d328a163",
+  "deployed_at": "2026-11-01T12:03:53.463531+00:00",
+  "previous_runtime": "BioCLIPSpeciesRouter",
+  "active_runtime": "BioCLIPLinearRouter"
+}

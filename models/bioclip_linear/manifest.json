@@ -1,0 +1,82 @@
+{
+  "task": "frozen_bioclip2_linear_species_open_set",
+  "protocol": "frozen-bioclip2-eight-crop-linear-v1",
+  "classes": [
+    "Apple",
+    "Corn",
+    "Grape",
+    "Pepper,_bell",
+    "Potato",
+    "Pumpkin",
+    "Soybean",
+    "Tomato"
+  ],
+  "feature_dim": 768,
+  "encoder_sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef",
+  "catalog_sha256": "4f5e8bf505651a85566fe55fc9178315db08d94f4a1d1d344ac3b68d77e526c1",
+  "labels_sha256": "70596c81893d4a26f3886ce73d04a9a5ee41f13a9abbc255949777ce5896d501",
+  "known_text_sha256": "a89beb3d6ecb06a910d64dcc664680aa576849dad9ca7f11ac9c1475b1fcd8b8",
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image float32 bilinear antialias",
+    "mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ],
+    "exif_transpose": true
+  },
+  "head_sha256": "d6ee867b8d4bcf4baee3909ba166c0695b13aafa90367f24b6992be2d328a163",
+  "rejection_sha256": "fbfc88c2078dd17b7f8d28580f09561d2cabe44f545b2ee7046806cbdd9a6a6d",
+  "rejection_threshold": 0.030728995800018314,
+  "selection": {
+    "signature": "04282eff423721741d00e3486b36863e13586743f260a6c183c8f208e63099fb",
+    "weight_decay": 0.01,
+    "epoch": 24,
+    "validation": {
+      "images": 3840,
+      "accuracy": 0.99140625,
+      "macro_f1": 0.9908366852246674,
+      "domain_macro_f1": 0.9083372447894298
+    },
+    "criterion": "validation domain_macro_f1",
+    "classes": [
+      "Apple",
+      "Corn",
+      "Grape",
+      "Pepper,_bell",
+      "Potato",
+      "Pumpkin",
+      "Soybean",
+      "Tomato"
+    ],
+    "head_sha256": "d6ee867b8d4bcf4baee3909ba166c0695b13aafa90367f24b6992be2d328a163"
+  },
+  "evaluation": {
+    "protocol": "frozen-bioclip2-eight-crop-linear-v1",
+    "signature": "04282eff423721741d00e3486b36863e13586743f260a6c183c8f208e63099fb",
+    "closed_set": {
+      "images": 7923,
+      "accuracy": 0.988640666414237,
+      "macro_f1": 0.988534840295321,
+      "domain_macro_f1": 0.7748031584398619
+    },
+    "known_coverage": 0.9854852959737473,
+    "accepted_species_accuracy": 0.9889856557377049,
+    "known_correct_and_accepted": 0.9746308216584627,
+    "unknown_images": 479,
+    "unknown_rejection": 0.9958246346555324,
+    "baseline_closed_set_accuracy": 0.9945727628423577,
+    "baseline_accepted_accuracy": 0.9950051229508197,
+    "unknown_evaluation": "Reused frozen BioCLIP taxonomy-margin scores; identical encoder, preprocessing, catalog and threshold.",
+    "test_policy": "Head/checkpoint/regularization chosen using validation only; test used for reporting.",
+    "limitations": "Public benchmark already examined in earlier experiments; three unknown test species from one source. Fresh phone/session holdout required."
+  },
+  "backbone_frozen": true,
+  "disease_prediction": false
+}

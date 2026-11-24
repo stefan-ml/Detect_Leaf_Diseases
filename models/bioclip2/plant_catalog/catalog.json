@@ -1,0 +1,41 @@
+{
+  "version": "bioclip2-full-plant-taxonomy-v1",
+  "mapping": {
+    "Apple": [
+      "Malus domestica",
+      "Malus pumila"
+    ],
+    "Corn": [
+      "Zea mays"
+    ],
+    "Grape": [
+      "Vitis vinifera"
+    ],
+    "Pepper,_bell": [
+      "Capsicum annuum",
+      "Solanum annuum"
+    ],
+    "Potato": [
+      "Solanum tuberosum"
+    ],
+    "Pumpkin": [
+      "Cucurbita pepo",
+      "Cucurbita maxima",
+      "Cucurbita moschata"
+    ],
+    "Soybean": [
+      "Glycine max"
+    ],
+    "Tomato": [
+      "Solanum lycopersicum",
+      "Lycopersicon esculentum"
+    ]
+  },
+  "plant_taxa": 335884,
+  "total_taxa": 867455,
+  "taxonomy_sha256": "4648928b006f85d83d28e5a27074ca9363465d82e778d708b369c5eaf54b8ef5",
+  "invalid_plant_vectors_excluded": 14514,
+  "source_features_sha256": "c72442de7b0cb7fcb55ab7ca08099d0f42fbd6769efe16ca64c1daa7a8b87db2",
+  "features_sha256": "4f5e8bf505651a85566fe55fc9178315db08d94f4a1d1d344ac3b68d77e526c1",
+  "labels_sha256": "70596c81893d4a26f3886ce73d04a9a5ee41f13a9abbc255949777ce5896d501"
+}

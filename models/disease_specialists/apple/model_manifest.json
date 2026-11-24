@@ -1,0 +1,44 @@
+{
+  "architecture": "convnextv2_tiny.fcmae_ft_in22k_in1k",
+  "classes": [
+    "Apple___Apple_scab",
+    "Apple___Black_rot",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input": "PIL RGB -> float32 [0,1] -> normalize",
+    "exif_transpose": true
+  },
+  "selection": {
+    "stage": "fine_last_two",
+    "val_loss": 0.3366868283652084,
+    "domain_macro_f1": 0.8231418767549692,
+    "domain_accuracy": 0.8703118483659387,
+    "signature": "f03400a7fcd63dffe834ab13ea713399cdcde7dbf9d5144f8531098c80bb27e4",
+    "inference": "single",
+    "smoke": false
+  },
+  "timm": "1.0.22",
+  "torch": "2.7.1+cu128",
+  "checkpoint_sha256": "cad2838cb55ad681a529deb2b76133399f81e788942733676a3b4d49a8691a35",
+  "format": "PyTorch state_dict; not compatible with the TensorFlow app loader",
+  "task": "crop_condition_specialist",
+  "species": "Apple",
+  "healthy_class": "Apple___healthy",
+  "unknown_disease_detection_evaluated": false,
+  "segmentation": false,
+  "evaluation_scope": "Condition classification given correct crop; not end-to-end router accuracy."
+}

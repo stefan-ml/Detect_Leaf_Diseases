@@ -1,0 +1,45 @@
+{
+  "architecture": "convnextv2_tiny.fcmae_ft_in22k_in1k",
+  "classes": [
+    "Soybean___Bacterial_blight",
+    "Soybean___Cercospora_leaf_blight",
+    "Soybean___Rust",
+    "Soybean___Sudden_death_syndrome",
+    "Soybean___healthy"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input": "PIL RGB -> float32 [0,1] -> normalize",
+    "exif_transpose": true
+  },
+  "selection": {
+    "stage": "fine_last_two",
+    "val_loss": 0.08750401227536785,
+    "domain_macro_f1": 1.0,
+    "domain_accuracy": 1.0,
+    "signature": "a810806d1dc60aac1d754e849a6242dc3372d34bf09575f6325f39114638d8f2",
+    "inference": "single",
+    "smoke": false
+  },
+  "timm": "1.0.22",
+  "torch": "2.7.1+cu128",
+  "checkpoint_sha256": "bae882d0515f10496d66d5e2e972bf72cb51f6a459b5149a539bd314849b2722",
+  "format": "PyTorch state_dict; not compatible with the TensorFlow app loader",
+  "task": "crop_condition_specialist",
+  "species": "Soybean",
+  "healthy_class": "Soybean___healthy",
+  "unknown_disease_detection_evaluated": false,
+  "segmentation": false,
+  "evaluation_scope": "Condition classification given correct crop; not end-to-end router accuracy."
+}

@@ -1,0 +1,138 @@
+{
+  "spec": {
+    "model_sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef",
+    "prompts": [
+      [
+        "Apple",
+        "Malus domestica",
+        [
+          "a photo of Malus domestica.",
+          "a photo of a leaf of Malus domestica.",
+          "a photo of a apple plant.",
+          "a close-up photo of a apple leaf."
+        ]
+      ],
+      [
+        "Apple",
+        "Malus pumila",
+        [
+          "a photo of Malus pumila.",
+          "a photo of a leaf of Malus pumila.",
+          "a photo of a apple plant.",
+          "a close-up photo of a apple leaf."
+        ]
+      ],
+      [
+        "Corn",
+        "Zea mays",
+        [
+          "a photo of Zea mays.",
+          "a photo of a leaf of Zea mays.",
+          "a photo of a corn plant.",
+          "a close-up photo of a corn leaf."
+        ]
+      ],
+      [
+        "Grape",
+        "Vitis vinifera",
+        [
+          "a photo of Vitis vinifera.",
+          "a photo of a leaf of Vitis vinifera.",
+          "a photo of a grapevine plant.",
+          "a close-up photo of a grapevine leaf."
+        ]
+      ],
+      [
+        "Pepper,_bell",
+        "Capsicum annuum",
+        [
+          "a photo of Capsicum annuum.",
+          "a photo of a leaf of Capsicum annuum.",
+          "a photo of a bell pepper plant.",
+          "a close-up photo of a bell pepper leaf."
+        ]
+      ],
+      [
+        "Pepper,_bell",
+        "Solanum annuum",
+        [
+          "a photo of Solanum annuum.",
+          "a photo of a leaf of Solanum annuum.",
+          "a photo of a bell pepper plant.",
+          "a close-up photo of a bell pepper leaf."
+        ]
+      ],
+      [
+        "Potato",
+        "Solanum tuberosum",
+        [
+          "a photo of Solanum tuberosum.",
+          "a photo of a leaf of Solanum tuberosum.",
+          "a photo of a potato plant.",
+          "a close-up photo of a potato leaf."
+        ]
+      ],
+      [
+        "Pumpkin",
+        "Cucurbita pepo",
+        [
+          "a photo of Cucurbita pepo.",
+          "a photo of a leaf of Cucurbita pepo.",
+          "a photo of a pumpkin plant.",
+          "a close-up photo of a pumpkin leaf."
+        ]
+      ],
+      [
+        "Pumpkin",
+        "Cucurbita maxima",
+        [
+          "a photo of Cucurbita maxima.",
+          "a photo of a leaf of Cucurbita maxima.",
+          "a photo of a pumpkin plant.",
+          "a close-up photo of a pumpkin leaf."
+        ]
+      ],
+      [
+        "Pumpkin",
+        "Cucurbita moschata",
+        [
+          "a photo of Cucurbita moschata.",
+          "a photo of a leaf of Cucurbita moschata.",
+          "a photo of a pumpkin plant.",
+          "a close-up photo of a pumpkin leaf."
+        ]
+      ],
+      [
+        "Soybean",
+        "Glycine max",
+        [
+          "a photo of Glycine max.",
+          "a photo of a leaf of Glycine max.",
+          "a photo of a soybean plant.",
+          "a close-up photo of a soybean leaf."
+        ]
+      ],
+      [
+        "Tomato",
+        "Solanum lycopersicum",
+        [
+          "a photo of Solanum lycopersicum.",
+          "a photo of a leaf of Solanum lycopersicum.",
+          "a photo of a tomato plant.",
+          "a close-up photo of a tomato leaf."
+        ]
+      ],
+      [
+        "Tomato",
+        "Lycopersicon esculentum",
+        [
+          "a photo of Lycopersicon esculentum.",
+          "a photo of a leaf of Lycopersicon esculentum.",
+          "a photo of a tomato plant.",
+          "a close-up photo of a tomato leaf."
+        ]
+      ]
+    ]
+  },
+  "file_sha256": "c8f1821b74b1f278d32b4bb2876ba0fea7f220b300e784f400ad35d40c2eecc8"
+}

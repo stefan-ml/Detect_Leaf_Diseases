@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "source_run": "training\\outputs\\bioclip_roi_rejection_v1",
+  "feature_identity": {
+    "inputs_sha256": "6fb37d875b7c8fd97b399884e23273c87ccc26275671457982605f4c2511af6e",
+    "head_sha256": "d6ee867b8d4bcf4baee3909ba166c0695b13aafa90367f24b6992be2d328a163",
+    "encoder_sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef",
+    "catalog_sha256": "4f5e8bf505651a85566fe55fc9178315db08d94f4a1d1d344ac3b68d77e526c1",
+    "known_text_sha256": "a89beb3d6ecb06a910d64dcc664680aa576849dad9ca7f11ac9c1475b1fcd8b8",
+    "segmenter_manifest_sha256": "1b11b049e10711551d60706fa1580a08c2b3f8f6b518192f105e5776be2d3b57",
+    "resize": "EXIF RGB thumbnail1280 -> JPEG90 -> active leaf segmenter ROI -> frozen BioCLIP transform",
+    "classes": [
+      "Apple",
+      "Corn",
+      "Grape",
+      "Pepper,_bell",
+      "Potato",
+      "Pumpkin",
+      "Soybean",
+      "Tomato"
+    ],
+    "batch": 8,
+    "torch": "2.7.1+cu128"
+  },
+  "reference_sha256": "33d57ce7ababef2a77f7320c821f2a629c4c284f7e0e3b816a17a5ecedf24f46",
+  "rule": {
+    "method": "combined",
+    "taxonomy_threshold": 0.017899197700000008,
+    "knn_threshold": 0.2247398748993874
+  },
+  "k": 5,
+  "reference_images": 951,
+  "selection": "Calibration species macro rejection; >=95% detected-known coverage and >=90% crop/source coverage (groups n>=10).",
+  "activated_on": "2026-11-03",
+  "authorization": "User explicitly requested activating combined rejection.",
+  "limitations": "Public-data ROI pilot; no guarantee for arbitrary unknown species or phone capture domain."
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      SIR2 · Kamera
+    </title>
+    <link rel="stylesheet" href="/static/style.css?v=phone-large-1">
+  </head>
+  <body>
+    <main class="phone">
+      <header>
+        <div>
+          <h1>
+            Kamera telefona
+          </h1>
+        </div>
+      </header>
+      <div class="frame">
+        <video id="camera" autoplay playsinline muted>
+        </video>
+        <canvas id="guide">
+        </canvas>
+        <p id="status" role="status"></p>
+      </div>
+      <div class="controls">
+        <button id="start">
+          Pokreni kameru
+        </button>
+        <button id="stop" class="secondary" disabled>
+          Zaustavi
+        </button>
+      </div>
+    </main>
+    <script src="/static/timing.js?v=1"></script>
+    <script src="/static/phone.js?v=4">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+{
+  "version": "bioclip2-full-plant-taxonomy-v1",
+  "bioclip_model_sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef",
+  "plant_features_sha256": "4f5e8bf505651a85566fe55fc9178315db08d94f4a1d1d344ac3b68d77e526c1",
+  "mapping": {
+    "Apple": [
+      "Malus domestica",
+      "Malus pumila"
+    ],
+    "Corn": [
+      "Zea mays"
+    ],
+    "Grape": [
+      "Vitis vinifera"
+    ],
+    "Pepper,_bell": [
+      "Capsicum annuum",
+      "Solanum annuum"
+    ],
+    "Potato": [
+      "Solanum tuberosum"
+    ],
+    "Pumpkin": [
+      "Cucurbita pepo",
+      "Cucurbita maxima",
+      "Cucurbita moschata"
+    ],
+    "Soybean": [
+      "Glycine max"
+    ],
+    "Tomato": [
+      "Solanum lycopersicum",
+      "Lycopersicon esculentum"
+    ]
+  },
+  "plant_labels_sha256": "70596c81893d4a26f3886ce73d04a9a5ee41f13a9abbc255949777ce5896d501",
+  "known_prompts": [
+    [
+      "Apple",
+      "Malus domestica",
+      [
+        "a photo of Malus domestica.",
+        "a photo of a leaf of Malus domestica.",
+        "a photo of a apple plant.",
+        "a close-up photo of a apple leaf."
+      ]
+    ],
+    [
+      "Apple",
+      "Malus pumila",
+      [
+        "a photo of Malus pumila.",
+        "a photo of a leaf of Malus pumila.",
+        "a photo of a apple plant.",
+        "a close-up photo of a apple leaf."
+      ]
+    ],
+    [
+      "Corn",
+      "Zea mays",
+      [
+        "a photo of Zea mays.",
+        "a photo of a leaf of Zea mays.",
+        "a photo of a corn plant.",
+        "a close-up photo of a corn leaf."
+      ]
+    ],
+    [
+      "Grape",
+      "Vitis vinifera",
+      [
+        "a photo of Vitis vinifera.",
+        "a photo of a leaf of Vitis vinifera.",
+        "a photo of a grapevine plant.",
+        "a close-up photo of a grapevine leaf."
+      ]
+    ],
+    [
+      "Pepper,_bell",
+      "Capsicum annuum",
+      [
+        "a photo of Capsicum annuum.",
+        "a photo of a leaf of Capsicum annuum.",
+        "a photo of a bell pepper plant.",
+        "a close-up photo of a bell pepper leaf."
+      ]
+    ],
+    [
+      "Pepper,_bell",
+      "Solanum annuum",
+      [
+        "a photo of Solanum annuum.",
+        "a photo of a leaf of Solanum annuum.",
+        "a photo of a bell pepper plant.",
+        "a close-up photo of a bell pepper leaf."
+      ]
+    ],
+    [
+      "Potato",
+      "Solanum tuberosum",
+      [
+        "a photo of Solanum tuberosum.",
+        "a photo of a leaf of Solanum tuberosum.",
+        "a photo of a potato plant.",
+        "a close-up photo of a potato leaf."
+      ]
+    ],
+    [
+      "Pumpkin",
+      "Cucurbita pepo",
+      [
+        "a photo of Cucurbita pepo.",
+        "a photo of a leaf of Cucurbita pepo.",
+        "a photo of a pumpkin plant.",
+        "a close-up photo of a pumpkin leaf."
+      ]
+    ],
+    [
+      "Pumpkin",
+      "Cucurbita maxima",
+      [
+        "a photo of Cucurbita maxima.",
+        "a photo of a leaf of Cucurbita maxima.",
+        "a photo of a pumpkin plant.",
+        "a close-up photo of a pumpkin leaf."
+      ]
+    ],
+    [
+      "Pumpkin",
+      "Cucurbita moschata",
+      [
+        "a photo of Cucurbita moschata.",
+        "a photo of a leaf of Cucurbita moschata.",
+        "a photo of a pumpkin plant.",
+        "a close-up photo of a pumpkin leaf."
+      ]
+    ],
+    [
+      "Soybean",
+      "Glycine max",
+      [
+        "a photo of Glycine max.",
+        "a photo of a leaf of Glycine max.",
+        "a photo of a soybean plant.",
+        "a close-up photo of a soybean leaf."
+      ]
+    ],
+    [
+      "Tomato",
+      "Solanum lycopersicum",
+      [
+        "a photo of Solanum lycopersicum.",
+        "a photo of a leaf of Solanum lycopersicum.",
+        "a photo of a tomato plant.",
+        "a close-up photo of a tomato leaf."
+      ]
+    ],
+    [
+      "Tomato",
+      "Lycopersicon esculentum",
+      [
+        "a photo of Lycopersicon esculentum.",
+        "a photo of a leaf of Lycopersicon esculentum.",
+        "a photo of a tomato plant.",
+        "a close-up photo of a tomato leaf."
+      ]
+    ]
+  ],
+  "known_text_sha256": "a89beb3d6ecb06a910d64dcc664680aa576849dad9ca7f11ac9c1475b1fcd8b8",
+  "known_manifest_sha256": "5ac3edb29f60372a454398836702b0eab7353f2196efad4bbfc36c6d3edc3fcd",
+  "calibration_sha256": "c70eae221bd705d132efe5568a5e99b82804cb19a69c3addc784e3f581f46bd7",
+  "unknown_manifest_sha256": "26be8a154b89d161d85b820cd3a885f87061d67068aa2ba31c8cf99b184747b4",
+  "convnext_model_sha256": "ee6f49f6e05e08c977543647b839b99d090502968b7932b6be09f6a21816bae8",
+  "smoke": false,
+  "preprocessing": {
+    "size": 224,
+    "resize": "whole-image float32 bilinear antialias",
+    "mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ],
+    "exif_transpose": true
+  },
+  "methods": {
+    "bioclip_similarity": {
+      "threshold": -0.6892294287681578,
+      "known_calibration_coverage": {
+        "AdditionalLeafDatasets": 0.9654135338345865,
+        "PlantDoc": 0.9587628865979382,
+        "PlantPathology2020": 1.0,
+        "PlantVillage": 0.9801505817932923,
+        "PlantWild": 0.9519230769230769
+      }
+    },
+    "bioclip_taxonomy_margin": {
+      "threshold": 0.030728995800018314,
+      "known_calibration_coverage": {
+        "AdditionalLeafDatasets": 0.9503759398496241,
+        "PlantDoc": 0.9690721649484536,
+        "PlantPathology2020": 0.9758064516129032,
+        "PlantVillage": 0.9931553730321697,
+        "PlantWild": 0.9807692307692307
+      }
+    },
+    "bioclip_convnext_gate": {
+      "threshold": 4.198763013409108,
+      "known_calibration_coverage": {
+        "AdditionalLeafDatasets": 0.9969924812030075,
+        "PlantDoc": 0.9587628865979382,
+        "PlantPathology2020": 1.0,
+        "PlantVillage": 0.9972621492128679,
+        "PlantWild": 0.9615384615384616
+      }
+    }
+  },
+  "scales": {
+    "bio": {
+      "center": -0.023696929216384888,
+      "scale": 0.027521207928657532
+    },
+    "energy": {
+      "center": -4.473107775322601,
+      "scale": 0.2091863832517129
+    }
+  },
+  "method": "bioclip_taxonomy_margin",
+  "minimum_known_coverage": 0.95,
+  "plant_taxa": 335884,
+  "task": "frozen_bioclip2_verifier_plus_convnext_species",
+  "unknown_detection_evaluated": true,
+  "selection": "Maximum macro-species unknown rejection on calibration species; test never used.",
+  "closed_set_convnext_accuracy": 0.9945727628423577,
+  "closed_set_bioclip_accuracy": 0.7930076991038748,
+  "limitations": "Three held-out unknown species, one public source; foundation pretraining overlap not ruled out. Requires fresh field photos."
+}

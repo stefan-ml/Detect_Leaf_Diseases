@@ -1,0 +1,107 @@
+{
+  "task": "eight_crop_condition_specialists",
+  "source_run": "training/outputs/convnextv2_disease_specialists_v1",
+  "deployed_at": "2026-11-01T15:46:50.772535+00:00",
+  "models": {
+    "Pumpkin": {
+      "directory": "pumpkin",
+      "manifest_sha256": "9797c17d19c14a0d7fe8beda6416bc05589080f0c74e1baf0b23baeaa1abcb08",
+      "checkpoint_sha256": "6ef81c645cbd2e95d56675bfb755aad2e1903810ee961212d77293d4dcb452e8",
+      "classes": [
+        "Pumpkin___Bacterial_leaf_spot",
+        "Pumpkin___Downy_mildew",
+        "Pumpkin___Mosaic_disease",
+        "Pumpkin___Powdery_mildew",
+        "Pumpkin___healthy"
+      ]
+    },
+    "Grape": {
+      "directory": "grape",
+      "manifest_sha256": "5043c4ace4db681bf523ae0c90b797bc942e2058977d6444fe193ed95959ce1b",
+      "checkpoint_sha256": "6a41b6b062b6986d68f53f5625259aa987cf3e1658952ba97fdcede46091f005",
+      "classes": [
+        "Grape___Black_rot",
+        "Grape___Esca_(Black_Measles)",
+        "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "Grape___healthy"
+      ]
+    },
+    "Corn": {
+      "directory": "corn",
+      "manifest_sha256": "abd71d07cf398e7c61c390ecf4016a3e8868c2a1608c2507bf6d5266f9550982",
+      "checkpoint_sha256": "c6c7d31f25f47224d80f7eb39acad1abf008de119739c3f71bcfe204b578d948",
+      "classes": [
+        "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+        "Corn___Common_rust",
+        "Corn___Northern_Leaf_Blight",
+        "Corn___healthy"
+      ]
+    },
+    "Potato": {
+      "directory": "potato",
+      "manifest_sha256": "eba50962e1f07a1da4fb700fcd0924d9f9b8f4a9ae55482884e173d6775b96bb",
+      "checkpoint_sha256": "ad07b435eff570fa968ab00d4e4c1e542ebaa8f1b12be4c922b147ef834cbaf8",
+      "classes": [
+        "Potato___Bacterial_soft_rot",
+        "Potato___Early_blight",
+        "Potato___Late_blight",
+        "Potato___Leafroll_virus",
+        "Potato___Potato_virus_X",
+        "Potato___Potato_virus_Y",
+        "Potato___healthy"
+      ]
+    },
+    "Apple": {
+      "directory": "apple",
+      "manifest_sha256": "86c7107bd0550e12a15ac9043e9dde6c759dfe8d047615dcb40487d6703407d4",
+      "checkpoint_sha256": "cad2838cb55ad681a529deb2b76133399f81e788942733676a3b4d49a8691a35",
+      "classes": [
+        "Apple___Apple_scab",
+        "Apple___Black_rot",
+        "Apple___Cedar_apple_rust",
+        "Apple___healthy"
+      ]
+    },
+    "Soybean": {
+      "directory": "soybean",
+      "manifest_sha256": "feaf12d8441d53aadd0bd22b1351da40fd3892566df875bf97546164d6366d91",
+      "checkpoint_sha256": "bae882d0515f10496d66d5e2e972bf72cb51f6a459b5149a539bd314849b2722",
+      "classes": [
+        "Soybean___Bacterial_blight",
+        "Soybean___Cercospora_leaf_blight",
+        "Soybean___Rust",
+        "Soybean___Sudden_death_syndrome",
+        "Soybean___healthy"
+      ]
+    },
+    "Pepper,_bell": {
+      "directory": "pepper_bell",
+      "manifest_sha256": "f4a1abe544a70c1cdc50d833e01462c8230973905129a314b729fa07e19c5cd6",
+      "checkpoint_sha256": "09d887187e79a1affdb14491bdabc98fea64e58c88207dd510b61794d9beb7ff",
+      "classes": [
+        "Pepper,_bell___Bacterial_spot",
+        "Pepper,_bell___Cercospora_leaf_spot",
+        "Pepper,_bell___Leaf_curl",
+        "Pepper,_bell___Powdery_mildew",
+        "Pepper,_bell___healthy"
+      ]
+    },
+    "Tomato": {
+      "directory": "tomato",
+      "manifest_sha256": "ecb4f55bbfab0425ac1c3e5b1d07d59da424489bf27c55ccf76deb24aa528991",
+      "checkpoint_sha256": "37c7824281f41b49e5ee161a1a82dd547bb5b5e5866f0f6d6e1ec4e298efecdb",
+      "classes": [
+        "Tomato___Bacterial_spot",
+        "Tomato___Early_blight",
+        "Tomato___Late_blight",
+        "Tomato___Leaf_Mold",
+        "Tomato___Septoria_leaf_spot",
+        "Tomato___Spider_mites Two-spotted_spider_mite",
+        "Tomato___Target_Spot",
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "Tomato___Tomato_mosaic_virus",
+        "Tomato___healthy"
+      ]
+    }
+  }
+}

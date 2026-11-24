@@ -1,0 +1,100 @@
+# Local Python environments and generated caches
+.venv/
+.venv-detector/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local datasets and reproducible experiment output
+combined_leaf_dataset/
+datasets/
+training/outputs/
+
+# Runtime logs and temporary application output
+/artifacts/*
+!/artifacts/reference_gate_parity.json
+!/artifacts/reference_gate_web_verification.json
+*.log
+
+# Locally installed Android platform tools
+/tools/platform-tools/
+
+# Model weights and reference arrays are distributed separately
+models/**/*.pt
+models/**/*.safetensors
+models/**/*.npy
+training/pretrained/*.safetensors
+
+# Non-runtime research, documentation and local development files
+/.agents/
+/.vscode/
+/documents/
+/metadata/
+/reports/
+/training/
+/artifacts/
+*.md
+/test_*.py
+/pytest.ini
+/verify.ps1
+/check_dataset.py
+/predict_*.py
+/run_roi_experiment.ps1
+/start_leaf_annotation.ps1
+/setup_leaf_detector.ps1
+/requirements-dev.txt
+/requirements-training.txt
+/requirements-detector.txt
+/migration_record.json
+/release_inventory.json
+/static/leaf_annotator.html
+/models/convnext/
+/models/router/
+/models/leaf_segmenter/source.pt
+/models/bioclip2/sir2_bioclip2_local.json
+/build/
+/dist/
+*.egg-info/
+
+# Active deployment weights belong in Git LFS
+!models/**/*.pt
+!models/**/*.safetensors
+!models/**/*.npy
+/models/leaf_segmenter/source.pt
+
+# Saved training checkpoints, runs and generated results
+**/checkpoints/
+**/checkpoint/
+**/results/
+**/outputs/
+**/runs/
+**/wandb/
+**/mlruns/
+**/lightning_logs/
+**/tensorboard/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.ipynb
+events.out.tfevents.*
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+*.pdf
+*.docx
+
+# Only deployed weights/reference arrays are runtime dependencies
+/models/bioclip2/open_clip_model.safetensors
+/models/bioclip2/plant_catalog/features.npy
+/models/bioclip2/plant_catalog/known_crop_text.npy
+!models/bioclip_linear/head.pt
+!models/disease_specialists/*/model_state.pt
+!models/leaf_segmenter/model.safetensors
+!models/roi_rejection/reference_bank.npz
